@@ -1,0 +1,61 @@
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="./static/css/login_style.css">
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Docker Flask App</title>
+</head>
+<body>
+    <h1>Hello World!</h1> 
+    
+<a class="waves-effect waves-light btn" onclick="">Fetch Message</a>
+</body>
+</html> -->
+
+<!--Display Alert Message on Button Click Event.-->
+<html>
+    <head>
+        <title>Display Alert Message on Button Click Event.</title>
+        <!-- <script type="text/javascript">
+            function showMessage() {
+                alert("Hello friends, this is message.");
+            }
+        </script> -->
+    </head>
+
+    <body>
+         <form class="forms_form" name="Login" action="/signUp" method="POST">
+          <fieldset class="forms_fieldset">
+
+            <div class="forms_field">
+            <input type="text" name="FirstName" placeholder="FirstName" class="forms_field-input" required autofocus />
+            </div>
+
+            <div class="forms_field">
+            <input type="text" name="LastName" placeholder="LastName" class="forms_field-input" required autofocus />
+            </div>
+
+           <div class="forms_field">
+           <input type="email" name="inputEmail" placeholder="Email" class="forms_field-input" required autofocus />
+           </div>
+          
+          </fieldset>
+          <div class="forms_buttons">
+          <!-- <button type="button" class="forms_buttons-forgot">Forgot password?</button> -->
+          <input type="submit" value="submit" class="forms_buttons-action"></a>
+
+          </div>
+     </form>
+    </body>
+    {% for message in get_flashed_messages() %}
+    <div class="alert-error">Error: {{ message }}</div>
+    {% endfor %}
+</html>
